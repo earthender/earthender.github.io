@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="一个OIer的学校生活与OI竞赛记录">
+  <meta name="author" content="code004">
+  <meta name="keywords" content="hexo,coding,c++,Brian Chen,code004">
+  <title>Windows 10 快速安装指南 | code004&#39;s Blog</title>
+
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css">
+
+
+  <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/atom-one-dark.min.css">
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_fmb4a04yx8h.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_pjno9b9zyxs.css">
+
+
+
+
+<link rel="stylesheet" href="/css/main.css">
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  
+<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="code004's Blog" type="application/atom+xml">
+</head>
+
+
+<body onload="welcome()">
+  <div id="dark" onclick="switchDarkMode()"></div>
+  <script>
+    var isNight = new Date().getHours() >= 22 || new Date().getHours() < 7; // 指定时间
+    // 依次判断 系统暗黑模式 指定时间 缓存 dark
+    if( matchMedia('(prefers-color-scheme: dark)').matches || isNight || localStorage.getItem('dark') === '1') {
+      if(!(isNight&&localStorage.getItem('noDark') === '1')) {
+        document.body.classList.add('dark');
+      }
+    }
+    document.getElementById('dark').innerHTML = document.querySelector("body").classList.contains("dark")?"🌙":"🌞";
+  </script>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">&nbsp;<strong>code004's Blog</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/">
+              <i class="iconfont icon-home-fill"></i>
+              首页</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/archives/">
+              <i class="iconfont icon-archive-fill"></i>
+              归档</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/categories/">
+              <i class="iconfont icon-category-fill"></i>
+              分类</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/tags/">
+              <i class="iconfont icon-tags-fill"></i>
+              标签</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/message/">
+              <i class="iconfont icon-comment"></i>
+              留言</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/about/">
+              <i class="iconfont icon-user-fill"></i>
+              关于</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/links/">
+              <i class="iconfont icon-link-fill"></i>
+              友链</a>
+          </li>
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="view intro-2" id="background" parallax="true" style="background: url('/img/banner.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="container text-center white-text fadeInUp">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              
+                <div class="mt-3 post-meta">
+                  <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+                  <time datetime="2020-02-10 14:09">
+                    2020年2月10日 下午
+                  </time>
+                </div>
+              
+
+              <div class="mt-1">
+                
+                  
+                  <span class="post-meta mr-2">
+                    <i class="iconfont icon-chart"></i>
+                    1.5k 字
+                  </span>
+                
+
+                
+                  
+                  <span class="post-meta mr-2">
+                      <i class="iconfont icon-clock-fill"></i>
+                    
+                    
+                    15
+                     分钟
+                  </span>
+                
+
+                
+                  <!-- 不蒜子统计文章PV -->
+                  
+                  <span id="busuanzi_container_page_pv" class="post-meta" style="display: none">
+                    <i class="iconfont icon-eye" aria-hidden="true"></i>
+                    <span id="busuanzi_value_page_pv"></span> 次
+                  </span>
+                
+              </div>
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <div class="post-content mx-auto" id="post">
+            
+              <p class="note note-info">
+                
+                  本文最后更新于：3 个月前
+                
+              </p>
+            
+            <article class="markdown-body">
+              <p>之前在一篇关于Visual Studio安装的文章里提到换过一次系统，前几天又换了一次。</p>
+<a id="more"></a>
+
+<p>我用的是台Lenovo的笔记本（LENOVO ideapad 300S），买的时候预装了家庭中文版的win10，后来越来越不顺手，C盘内存告急，所以我找YBW借了个U盘重装了“精简版”的win10 Enterprise S，由于是精简的，所以禁用了更新和各种功能，并且企业版没有应用商店，即使是用特殊途径下载安装了应用商店也十分不方便，下载的闹钟和时钟（Win10自带应用）到时间居然不会提醒！！！再加上C盘内存再次锐减无法处理，并且为了干掉那盗版系统配套的2345的猥琐导航和近期出现奇葩驱动错误蓝屏，我决定重装电脑，而且一定要装正版的。</p>
+<p>于是，我经过搜索，查到了下面的界面：</p>
+<p><img src="/posts/how-to-reinstall-windows-10/google-win10.png" srcset="/img/loading.gif" alt="Google Win10"></p>
+<p>我十分高兴！居然微软精心给出了win10 iso的下载链接！</p>
+<p><img src="/posts/how-to-reinstall-windows-10/media-downloader.png" srcset="/img/loading.gif" alt="Win10 Media Downloader"></p>
+<p>欸？肿么没有了？肿么只有一个下载工具了？</p>
+<p>我尝试下载了介个工具，然后花了几个小时，结果出现错误:( 重试了一次还是同上。再者，我用这种方式根本无法更换Windows版本！肯定企业版升级了还是企业版…</p>
+<p>后来，我发现了一个奇怪的地方</p>
+<p>为什么Google的蜘蛛爬到的是个ISO下载界面呢？会不会跟系统有关？媒介工具是exe文件，肯定只有Windows系统能运行，那么如果我是MacOS或者Linux用户呢？微软肯定不会放弃这个赚钱的机会吧，不可能连个下载链接都不给吧</p>
+<p>于是，我点击了Google的网络快照</p>
+<p><img src="/posts/how-to-reinstall-windows-10/download-iso.png" srcset="/img/loading.gif" alt="Download Win10 ISO"></p>
+<p><img src="/posts/how-to-reinstall-windows-10/before-you-begin.png" srcset="/img/loading.gif" alt="Before You Begin"></p>
+<p>这不就是我想要的吗！</p>
+<p>于是我快速地选择了版本，点击了Confirm，然后出现了下面这句话：</p>
+<blockquote>
+<p>Validating your request. This may take several minutes. Do not refresh the page or select back, doing so will cancel the request.</p>
+</blockquote>
+<p>然后网页就卡住了…</p>
+<p>我灵机一动：如果我在手机上访问呢？我尝试了一下，果真有了ISO下载页面</p>
+<p>这样的话…我想到了Chrome内置的手机模拟器</p>
+<p>对了，就它了！</p>
+<p>使用“手机”打开并刷新后，我们看到了下面的界面：</p>
+<p><img src="/posts/how-to-reinstall-windows-10/phone-iso.png" srcset="/img/loading.gif" alt="Phone ISO"></p>
+<p>Awesome!!!</p>
+<p>版本那里选择Windows 10（当然了如果你想要家庭中文版也可以，不过那就没办法换语言咯~）</p>
+<p>下面会出来一个语言选择，选择你想要的语言（不过其实也无所谓，因为后面可以改的）</p>
+<p>有简体中文，也有英语的，都可以选择。</p>
+<p>选择完后，等待片刻，出现一个让你选64位还是32位的界面（注意下载链接仅12小时有效），选择，开始下载即可。</p>
+<p>文件大小5G多（根据语言不同而不同），用IDM下载速度大概12M/s，总耗时大概在10mins左右（这里网络环境一般），如果不够快可以设置32线程。</p>
+<p><img src="/posts/how-to-reinstall-windows-10/downloading.png" srcset="/img/loading.gif" alt="Downloading"></p>
+<p>等待下载完成后（上面截图是下载的简体中文版，我当时用的英文版），把它放到一个非系统盘的文件夹里，建议单独建一个，比如这样</p>
+<p><img src="/posts/how-to-reinstall-windows-10/iso-file.png" srcset="/img/loading.gif" alt="ISO File"></p>
+<p>接着，使用像U深度这样的U盘PE写入工具，并选择一个U盘（并将你的数据备份到一个非系统盘，因为你的U盘会被格式化，而安装系统时你的C盘会被重置）</p>
+<p>接着，百度一下你的电脑进入BIOS的方式，比如我就需要百度：</p>
+<blockquote>
+<p>联想笔记本如何进入BIOS</p>
+</blockquote>
+<p>获得快捷键后，重启电脑，在出现品牌Logo时迅速并连续地敲击那个快捷键</p>
+<p>接下来因为各品牌不同，所以请自行百度：</p>
+<blockquote>
+<p>联想笔记本如何U盘启动</p>
+</blockquote>
+<p>（请把<code>联想笔记本</code>换成您的电脑品牌）</p>
+<p>学会了以后，进入PE安装系统，像U深度，你进入后选择你*的ISO文件并还原即可，此过程大概耗时5~10分钟</p>
+<p>完毕，重启，<strong>拔掉U盘</strong>，进入系统设置界面</p>
+<p>中文版我不知道，反正英文版会有Cortana很耐心地帮你提示。至于激活，如果有类似于我没有激活码或者稍后激活之类的选项就选，实在没有就用手机买一个呗 <del>也可以直接百度Win10家庭版激活码，然后直接填进去即可</del></p>
+<p>我是因为笔记本本身自己带了家庭版的系统，然后之前我登录了微软账号，所以我的license直接跟我的账号绑定了。安装过程中我登录了微软账号，所以就直接自动激活了，反正我设置里是这样说的：</p>
+<p><img src="/posts/how-to-reinstall-windows-10/activated-digital-license.png" srcset="/img/loading.gif" alt="Activated Using a Digital License"></p>
+<p>总之，安装过程按照屏幕上的来操作就行了，注意：</p>
+<p>如果出现那种纯色背景一串白字然后转转转的，提示什么正在准备Windows的，<strong>不要按照网上的某些方法强行关机</strong>，否则可能造成你白干了这么久。除非等待时间超过3~5小时，并且你需要尽快使用电脑，否则不要不要不要强行关机，按照屏幕说的做。</p>
+<p>重启后，在设置中安装一些更新和驱动并重启，即可了！！！</p>
+<p><img src="/posts/how-to-reinstall-windows-10/win10.png" srcset="/img/loading.gif" alt="获得成就：成功安装正版Windows 10！"></p>
+<p>另外，最新版本的Windows的Cortana非常高级哦~</p>
+<div class="hljs"><pre><code class="hljs plain">- Hey, Cortana. Open Google Chrome.
+- Sure, opening Google Chrome Canary...
+
+- Hey, Cortana. Cancel my alarm clock.
+- Cancel your alarm clock for what time?
+- Three Forty P.M..
+- Sure.</code></pre></div>
+
+<p>简直比Siri还高级！</p>
+<p>好了，本文到此结束了，博主也该睡觉了（当前时间12:44 A.M.），有什么问题欢迎在文末处留言，涉及隐私的问题也可以直接发邮件到 <a href="mailto:code004@qq.com" rel="external nofollow noopener noreferrer" target="_blank">code004@qq.com</a> 哦！</p>
+<p>Thx for reading!</p>
+
+            </article>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/%E9%9A%8F%E8%AE%B0/">随记</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E7%B3%BB%E7%BB%9F/">系统</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E6%90%AD%E5%BB%BA/">搭建</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">本文在 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank" rel="external nofollow noopener noreferrer">CC BY-NC-ND 4.0协议</a> 的前提下，禁止超过文章30%字数的摘录（对于不超过文章30%字数的摘录，要求在醒目位置注明原文作者与原文链接），同时，在未经作者本人手写签名许可的情况下，禁止任何形式的全文转载，禁止发布任何基于本文的再创作。</p>
+              
+              
+                <div class="post-prevnext row">
+                  <div class="post-prev col-6">
+                    
+                    
+                      <a href="/posts/reply-to-a-pr/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">对一个Pull Request的回复</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </div>
+                  <div class="post-next col-6">
+                    
+                    
+                      <a href="/posts/notice-about-2019-ncov/">
+                        <span class="hidden-mobile">关于新型冠状病毒的公告</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </div>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <div class="comments" id="comments">
+                
+                
+  <script defer src="https://utteranc.es/client.js" repo="code004Accepted/blog-comment" issue-term="title" label="Utterances" theme="github-dark-orange" crossorigin="anonymous">
+  </script>
+
+
+              </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+  <div class="col-lg-7 mx-auto nopadding-md">
+    <div class="container custom post-content mx-auto">
+      <a href="https://internetdefenseleague.org" rel="external nofollow noopener noreferrer" target="_blank"><img src="/img/footer_badge.png" srcset="/img/loading.gif" class="rounded mx-auto d-block mt-5" style="width:80px; height:80px;" alt="Member of The Internet Defense League"></a>
+    </div>
+  </div>
+
+
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+
+  
+
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <div>
+      Powered by 
+      <i class="iconfont icon-copyright"></i><a href="https://github.com/code004Accepted" target="_blank" rel="nofollow noopener">
+        <span>code004Accepted</span></a><br>
+      Thanks to <a href="https://hexo.io" target="_blank" rel="external nofollow noopener noreferrer"><span>Hexo</span></a> & <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener">
+        <span>Fluid</span></a>
+    </div>
+    
+  <div>
+    
+      <!-- 不蒜子统计PV -->
+      
+      <span id="busuanzi_container_site_pv" style="display: none">
+      Views <span id="busuanzi_value_site_pv"></span> |
+    </span>
+    
+    
+      <!-- 不蒜子统计UV -->
+      
+      <span id="busuanzi_container_site_uv" style="display: none">
+      Users <span id="busuanzi_value_site_uv"></span>
+    </span>
+    
+  </div>
+
+
+    
+
+    
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+  <script src="/js/lazyload.js"></script>
+
+
+
+  
+  <script src="https://cdn.staticfile.org/tocbot/4.11.1/tocbot.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: '.post-content',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
+
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js"></script>
+  <script src="/js/clipboard-use.js"></script>
+
+
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+<!-- Plugins -->
+
+
+
+  <script src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js"></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "Windows 10 快速安装指南&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: true,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js"></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script src="/js/local-search.js"></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      searchFunc(path, 'local-search-input', 'local-search-result');
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css">
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="/css/sweetalert.css">
+  <script type="text/javascript" src="/js/sweetalert.js"></script>
+  <script>
+    window.onload = function(){
+      document.body.oncopy = function() {
+        sweetAlert("复制成功", "欢迎将本博客原文地址分享到其它网站。允许不超过文章30%字数的摘录，但请在醒目位置附上原文链接及作者。未经许可禁止任何形式的全文转载。禁止发布任何基于本文的再创作。复制本站任何内容即代表您已阅读、同意并保证遵守以上规则。", "success");
+      };
+    }
+  </script>
+
+  <script>
+    //点击事件
+    function switchDarkMode() {
+      if ($('body').hasClass('dark')) {
+        $("#dark").html("🌞");
+        document.body.classList.remove('dark');
+        localStorage.setItem('noDark', '1');
+        localStorage.setItem('dark', '0');
+      } else {
+        $("#dark").html("🌙"); 
+        document.body.classList.add('dark');
+        localStorage.setItem('dark', '1');
+        localStorage.setItem('noDark', '0');
+      }
+    }
+  </script>
+
+</body>
+
+</html>
