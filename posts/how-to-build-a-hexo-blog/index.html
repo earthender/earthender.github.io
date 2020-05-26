@@ -7,7 +7,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
   <link rel="icon" type="image/png" href="/img/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -29,7 +29,7 @@
 
 <!-- 主题依赖的图标库，不要自行修改 -->
 
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_fmb4a04yx8h.css">
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_yg9cfy8wd6.css">
 
 
 
@@ -43,12 +43,11 @@
 <!-- 自定义样式保持在最底部 -->
 
 
-  
 <meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="code004's Blog" type="application/atom+xml">
 </head>
 
 
-<body onload="welcome()">
+<body>
   <div id="dark" onclick="switchDarkMode()"></div>
   <script>
     var isNight = new Date().getHours() >= 22 || new Date().getHours() < 7; // 指定时间
@@ -76,74 +75,98 @@
           
           
           
-          <li class="nav-item">
-            <a class="nav-link" href="/">
-              <i class="iconfont icon-home-fill"></i>
-              首页</a>
-          </li>
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
         
           
           
           
-          <li class="nav-item">
-            <a class="nav-link" href="/archives/">
-              <i class="iconfont icon-archive-fill"></i>
-              归档</a>
-          </li>
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
         
           
           
           
-          <li class="nav-item">
-            <a class="nav-link" href="/categories/">
-              <i class="iconfont icon-category-fill"></i>
-              分类</a>
-          </li>
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
         
           
           
           
-          <li class="nav-item">
-            <a class="nav-link" href="/tags/">
-              <i class="iconfont icon-tags-fill"></i>
-              标签</a>
-          </li>
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
         
           
           
           
-          <li class="nav-item">
-            <a class="nav-link" href="/message/">
-              <i class="iconfont icon-comment"></i>
-              留言</a>
-          </li>
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/message/">
+                <i class="iconfont icon-comment"></i>
+                留言
+              </a>
+            </li>
+          
         
           
           
           
-          <li class="nav-item">
-            <a class="nav-link" href="/about/">
-              <i class="iconfont icon-user-fill"></i>
-              关于</a>
-          </li>
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
         
           
           
           
-          <li class="nav-item">
-            <a class="nav-link" href="/links/">
-              <i class="iconfont icon-link-fill"></i>
-              友链</a>
-          </li>
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
         
           
           
           
-          <li class="nav-item">
-            <a class="nav-link" href="/changeline/">
-              <i class="iconfont icon-switch-fill"></i>
-              切换</a>
-          </li>
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/changeline/">
+                <i class="iconfont icon-switch-fill"></i>
+                切换
+              </a>
+            </li>
+          
         
         
           <li class="nav-item" id="search-btn">
@@ -358,7 +381,7 @@
 </ol>
 <p>如上，对每个主题，点击预览图片会进入预览网站，点击蓝色的主题名称会进入相应的Github repo。</p>
 <p>若主题README中无特殊说明，请使用下面命令进行主题复制：</p>
-<div class="hljs"><pre><code class="hljs plain">git clone https:&#x2F;&#x2F;github.com&#x2F;xxx&#x2F;xxx themes&#x2F;xxx</code></pre></div>
+<div class="hljs"><pre><code class="hljs crmsh">git <span class="hljs-keyword">clone</span> <span class="hljs-title">https</span>://github.com/xxx/xxx themes/xxx</code></pre></div>
 
 <p>（上面的<code>https://github.com/xxx/xxx</code>请替换为主题repo地址，<code>themes/xxx</code>的xxx请替换为主题名称）</p>
 <p>要使用一个主题，请先打开<strong><em>站点配置文件</em></strong>，将<code>themes: landscape</code>改为<code>themes: xxx</code>（xxx为主题在themes下的目录名字，就是刚刚代码里的主题名称）</p>
@@ -407,11 +430,11 @@
 <p>如果您想给hexo或者next主题打广告，请跳过此段</p>
 <p>如果您想博客底部干净整洁，请把上面片段中所有<code>true</code>改成<code>false</code>（<code>theme.enable</code>选项必须保持<code>true</code>）</p>
 <p><strong>安全警告：根据NexT主题的LICENSE，您应该确保theme.enable选项打开，</strong><a href="https://github.com/theme-next/hexo-theme-next/blob/master/LICENSE.md" target="_blank" rel="noopener">NexT主题LICENSE</a>原文节选如下：</p>
-<div class="hljs"><pre><code class="hljs plain">c) A covered work must retain «NexT» official website link (https:&#x2F;&#x2F;theme-next.org) in footer section of every website created, modified or manipulated by using «NexT». «NexT» theme configuration must be:
+<div class="hljs"><pre><code class="hljs yaml"><span class="hljs-string">c)</span> <span class="hljs-string">A</span> <span class="hljs-string">covered</span> <span class="hljs-string">work</span> <span class="hljs-string">must</span> <span class="hljs-string">retain</span> <span class="hljs-string">«NexT»</span> <span class="hljs-string">official</span> <span class="hljs-string">website</span> <span class="hljs-string">link</span> <span class="hljs-string">(https://theme-next.org)</span> <span class="hljs-string">in</span> <span class="hljs-string">footer</span> <span class="hljs-string">section</span> <span class="hljs-string">of</span> <span class="hljs-string">every</span> <span class="hljs-string">website</span> <span class="hljs-string">created,</span> <span class="hljs-string">modified</span> <span class="hljs-string">or</span> <span class="hljs-string">manipulated</span> <span class="hljs-string">by</span> <span class="hljs-string">using</span> <span class="hljs-string">«NexT».</span> <span class="hljs-string">«NexT»</span> <span class="hljs-attr">theme configuration must be:</span>
 
-footer:
-  theme:
-    enable: true</code></pre></div>
+<span class="hljs-attr">footer:</span>
+  <span class="hljs-attr">theme:</span>
+    <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span></code></pre></div>
 
 <p>接下来，请继续在<strong><em>主题配置文件</em></strong>中找到以下内容（请自行Ctrl+F搜索）</p>
 <div class="hljs"><pre><code class="hljs yaml"><span class="hljs-comment"># ---------------------------------------------------------------</span>
@@ -442,11 +465,11 @@ footer:
 <p>格式很简单，可以写成这样：<code>{name}: {link} || {icon}</code></p>
 <p><code>{name}</code>是指显示在菜单中的名称，比如categories和tags，就是分类和标签</p>
 <p><strong>注意：分类和标签页面需要自己创建：</strong></p>
-<div class="hljs"><pre><code class="hljs plain">hexo new page tags
-hexo new page categories</code></pre></div>
+<div class="hljs"><pre><code class="hljs routeros">hexo new<span class="hljs-built_in"> page </span>tags
+hexo new<span class="hljs-built_in"> page </span>categories</code></pre></div>
 
 <p>随后在<code>source/tags/index.md</code>中<code>front-matter</code>里输入：</p>
-<div class="hljs"><pre><code class="hljs plain">type: tags</code></pre></div>
+<div class="hljs"><pre><code class="hljs elm"><span class="hljs-keyword">type</span>: tags</code></pre></div>
 
 <p>注：某些主题也可能是<code>layout: tags</code>，根据主题决定。</p>
 <p>分类界面也是如此，把<code>tags</code>改成<code>categories</code>即可。</p>
@@ -673,12 +696,12 @@ hexo new page categories</code></pre></div>
 <p>请把刚刚复制的密钥粘贴到<code>Key</code>框中，<code>Title</code>可以随便写，好像不写也可以，然后点击绿色按钮<code>Add SSH key</code></p>
 <p>接下来，需要在本地验证一下是否成功，在Git Bash中输入<code>ssh -T git@github.com</code>，如果提示<code>Hi {username}! You&#39;ve successfully authenticated, but GitHub does not provide shell access.</code>就说明SSH配置成功，<code>{username}</code>应该是你的Github用户名</p>
 <p>这里说一下，如果是Coding要验证，请在Git Bash中输入<code>ssh -T git@e.coding.net</code>，如果提示：</p>
-<div class="hljs"><pre><code class="hljs plain">Coding 提示: Hello &#123;username&#125;, You&#39;ve connected to Coding.net via SSH. This is a personal key. &#123;username&#125;，你好，你已经通过 SSH 协议认证 Coding.net 服务，这是一个个人公钥</code></pre></div>
+<div class="hljs"><pre><code class="hljs reasonml">Coding 提示: Hello &#123;username&#125;, You've connected <span class="hljs-keyword">to</span> <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">Coding</span>.</span></span>net via SSH. This is a personal key. &#123;username&#125;，你好，你已经通过 SSH 协议认证 <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">Coding</span>.</span></span>net 服务，这是一个个人公钥</code></pre></div>
 
 <p>说明SSH配置成功，<code>{username}</code>应该是你的Coding用户名</p>
 <p>Gitee也是同样的道理，<code>ssh -T git@gitee.com</code>即可</p>
 <p>接下来，我们需要安装一个帮助我们把blog发布到Git仓库的包：</p>
-<div class="hljs"><pre><code class="hljs plain">npm install hexo-deployer-git --save</code></pre></div>
+<div class="hljs"><pre><code class="hljs sql">npm <span class="hljs-keyword">install</span> hexo-deployer-git <span class="hljs-comment">--save</span></code></pre></div>
 
 <p>（如果您配置了<code>cnpm</code>也可以将<code>npm</code>改为<code>cnpm</code>）</p>
 <p>好的，现在你已经能正常连接到Github/Coding/Gitee了，请打开<strong><em>站点配置文件</em></strong>，复制并粘贴到文件末尾（如果已经有类似设置请覆盖）：</p>
@@ -712,12 +735,12 @@ hexo new page categories</code></pre></div>
 <p>好的，请记得要保存站点配置文件，可以开始发布了</p>
 <p>（温馨提示：以后在发布前建议先使用<code>hexo s</code>检查界面是否有Bug或者Markdown是否崩了等等）</p>
 <p>PS：在发布之前请先执行：</p>
-<div class="hljs"><pre><code class="hljs plain">git config --global user.name &quot;(Username)&quot;
-git config --global user.email &quot;(Email)&quot;</code></pre></div>
+<div class="hljs"><pre><code class="hljs routeros">git<span class="hljs-built_in"> config </span>--global user.name <span class="hljs-string">"(Username)"</span>
+git<span class="hljs-built_in"> config </span>--global user.email <span class="hljs-string">"(Email)"</span></code></pre></div>
 
 <p>username和email可以采用Github/Coding注册的用户名和邮箱</p>
 <p>发布指令（在Git Bash中执行）：</p>
-<div class="hljs"><pre><code class="hljs plain">hexo cl &amp;&amp; hexo g &amp;&amp; hexo d</code></pre></div>
+<div class="hljs"><pre><code class="hljs sas">hexo cl <span class="hljs-variable">&amp;&amp;</span> hexo g <span class="hljs-variable">&amp;&amp;</span> hexo d</code></pre></div>
 
 <p>等待数十秒甚至几分钟（取决于网速）后，如果您看到：<code>INFO  Deploy done: git</code></p>
 <p>恭喜！成功了！</p>
@@ -952,6 +975,7 @@ git config --global user.email &quot;(Email)&quot;</code></pre></div>
 <!-- SCRIPTS -->
 <script src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="/js/debouncer.js"></script>
 <script src="/js/main.js"></script>
 
 
@@ -1083,6 +1107,8 @@ git config --global user.email &quot;(Email)&quot;</code></pre></div>
 
 
 
+  
+
   <link rel="stylesheet" href="/css/sweetalert.css">
   <script type="text/javascript" src="/js/sweetalert.js"></script>
   <script>
@@ -1109,7 +1135,5 @@ git config --global user.email &quot;(Email)&quot;</code></pre></div>
       }
     }
   </script>
-
 </body>
-
 </html>
