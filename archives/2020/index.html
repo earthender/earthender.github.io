@@ -217,12 +217,18 @@
                 
 
 <div class="list-group">
-  <p class="h4">共计 52 篇文章</p>
+  <p class="h4">共计 53 篇文章</p>
   <hr>
   
     
       
       <p class="h5">2020</p>
+    
+    <a href="/posts/a-word-to-newcomers/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">对“后浪”的几句话</span>
+      <span style="float: right;">05-29</span>
+    </a>
+  
     
     <a href="/posts/about-windows-update/" class="list-group-item list-group-item-action">
       <span class="archive-post-title">关于Windows Update</span>
@@ -277,13 +283,19 @@
       <span style="float: right;">02-01</span>
     </a>
   
-    
-    <a href="/posts/anti-january-invest-exam/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">也谈2020元调英语阅读题</span>
-      <span style="float: right;">01-10</span>
-    </a>
-  
 </div>
+
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <span class="page-number current">1</span><a class="page-number" href="/archives/2020/page/2/">2</a><a class="extend next" rel="next" href="/archives/2020/page/2/"><i class="iconfont icon-arrowright"></i></a>
+    </span>
+  </nav>
+  
+  <script>
+    for (ele of document.getElementById("pagination").getElementsByTagName("a")) {
+      ele.href += '#board';
+    }
+  </script>
 
 
 
