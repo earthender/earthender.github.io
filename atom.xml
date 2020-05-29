@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://code004.ml/"/>
-  <updated>2020-05-29T15:18:47.848Z</updated>
+  <updated>2020-05-29T17:26:15.259Z</updated>
   <id>https://code004.ml/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>本站域名可能将于2个月内转换到code004.cf</title>
+    <link href="https://code004.ml/posts/about-domain-transfer/"/>
+    <id>https://code004.ml/posts/about-domain-transfer/</id>
+    <published>2020-05-29T17:24:04.000Z</published>
+    <updated>2020-05-29T17:26:15.259Z</updated>
+    
+    <content type="html"><![CDATA[<p>如题</p><p>相应地，大部分服务也会转至code004.cf进行</p><p>如果可以，麻烦互相转告，谢谢qwq</p><p>后期可能两个域名同时运行，具体看域名提供商咯233</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;如题&lt;/p&gt;
+&lt;p&gt;相应地，大部分服务也会转至code004.cf进行&lt;/p&gt;
+&lt;p&gt;如果可以，麻烦互相转告，谢谢qwq&lt;/p&gt;
+&lt;p&gt;后期可能两个域名同时运行，具体看域名提供商咯233&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="公告" scheme="https://code004.ml/categories/%E5%85%AC%E5%91%8A/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>对“后浪”的几句话</title>
@@ -191,9 +219,9 @@
       <category term="教程" scheme="https://code004.ml/categories/%E6%95%99%E7%A8%8B/"/>
     
     
-      <category term="学校" scheme="https://code004.ml/tags/%E5%AD%A6%E6%A0%A1/"/>
-    
       <category term="非请勿入" scheme="https://code004.ml/tags/%E9%9D%9E%E8%AF%B7%E5%8B%BF%E5%85%A5/"/>
+    
+      <category term="学校" scheme="https://code004.ml/tags/%E5%AD%A6%E6%A0%A1/"/>
     
   </entry>
   
@@ -505,27 +533,6 @@
     
     
       <category term="学校" scheme="https://code004.ml/tags/%E5%AD%A6%E6%A0%A1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>公告板</title>
-    <link href="https://code004.ml/posts/notice/"/>
-    <id>https://code004.ml/posts/notice/</id>
-    <published>2019-09-14T16:10:39.000Z</published>
-    <updated>2019-12-13T12:34:18.534Z</updated>
-    
-    <content type="html"><![CDATA[<div class="note warning">警告：在访问本站任何页面前，请仔细阅读本文，以免给您带来不必要的麻烦！任何因未阅读本文造成的后果请自己承担！</div><a id="more"></a><h1 id="关于版权"><a href="#关于版权" class="headerlink" title="关于版权"></a>关于版权</h1><p>本站文章可以分为三类：有意义原创，转载与无意义原创</p><p>对于有意义原创文章，会在文章底部再次声明版权协议。对于此类文章，欢迎您分享原文地址，未经许可禁止进行任何摘录与任何形式的转载（如有转载或摘录需求，请联系 <a href="mailto:code004@qq.com" rel="external nofollow noopener noreferrer" target="_blank">code004@qq.com</a> ，只有在您收到明确回复的情况下才允许转载）。根据 CC BY-NC-ND 协议，您不被允许发布基于文章的再创作，也就是说，您不能对文章内容进行修改后再发布，尽管文章可能出现知识性错误。如果文章出现知识性错误，请在评论区告知（或者，如果因为某种原因，此文章没有评论区，请在留言板告知），而不是私自摘录并修改。</p><p>对于转载文章，我会声明原文地址与作者。如果您认为我侵犯了您的版权，请在评论区告知，我会立即删除相关文章并私下商谈。此类文章在转载或摘录前，请仔细阅读原作者注明的协议，否则后果自负。</p><p>对于无意义原创文章，底部既没有再次声明版权协议，文章中又没有声明原文地址或作者。此类文章，允许全文转载，但请在醒目位置附上原文链接及作者。同样地，根据 CC BY-NC-ND 协议，您也不允许发布基于文章的再创作。</p><p>本站在您复制文字前加上了提醒（但是仍然可以复制成功，如果不成功请重试），希望您尊重博主的版权，否则一切后果自负。</p><h1 id="关于评论"><a href="#关于评论" class="headerlink" title="关于评论"></a>关于评论</h1><p>本站原采用Gitalk系统，后期考虑到其不稳定，且拥有读取用户所有公开仓库（<code>public repo</code>）的权限，不完全安全，故现已改用Utterances作为评论系统。在您登录时，无需对任何应用进行授权。如果您已登录Github账号，请点击评论框右下角的”Sign in to comment”，登录成功后您会自动被重定向回到相关界面；如果您未登录Github账号，点击上述按钮后会出现Github的登录界面，照常登录即可。</p><p>对于评论区中吵架/骂人等不适当的言论，博主保留删除的权利。其他正常评论，有小概率可能因为数据迁移或博主手滑而导致丢失，对此博主不承担任何责任。</p><p>评论加载速度可能比较慢，如果超出了您忍受的限度，请尝试<a href="https://code004.coding.me" target="_blank" rel="external nofollow noopener noreferrer">切换到Coding线路</a>再次登录。</p><h1 id="关于学术问题"><a href="#关于学术问题" class="headerlink" title="关于学术问题"></a>关于学术问题</h1><p>如果本站的文章中出现任何学术问题，请不要私自转载并修正错误。请在相关文章的评论区告知。如果文章没有评论区，请在留言板告知。对于为了修改错误而进行的违规摘录/转载，按照上述版权协议处理。</p><h1 id="关于本站中的代码与文件"><a href="#关于本站中的代码与文件" class="headerlink" title="关于本站中的代码与文件"></a>关于本站中的代码与文件</h1><p>由于博主是个很喜欢敲代码/写工程的coder，本站中难免会出现大量代码与文件。现作下列声明：</p><ol><li>本站所有可能对您的电脑造成危害的代码或文件均会特别告知，如果因为使用/查看了危险代码或文件造成您的损失，本站概不负责。</li><li>本站所有未特别声明的代码均为在博主本机或虚拟机上测试通过的代码，文件均为博主正常使用无危害的文件。如果因为使用/查看了安全代码或文件造成您的损失，本站同样概不负责。</li></ol><h1 id="附加声明"><a href="#附加声明" class="headerlink" title="附加声明"></a>附加声明</h1><p>对于本公告或本博客的任何文章的版权问题，请在对应文章下留言或在留言板中留言（或发送邮件到 <a href="mailto:code004@qq.com" rel="external nofollow noopener noreferrer" target="_blank">code004@qq.com</a> ）仅在您收到明确答复后才允许进行转载/摘录等</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;div class=&quot;note warning&quot;&gt;警告：在访问本站任何页面前，请仔细阅读本文，以免给您带来不必要的麻烦！任何因未阅读本文造成的后果请自己承担！&lt;/div&gt;
-    
-    </summary>
-    
-    
-      <category term="公告" scheme="https://code004.ml/categories/%E5%85%AC%E5%91%8A/"/>
-    
     
   </entry>
   
