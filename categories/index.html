@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 
 
 
@@ -12,19 +12,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-  
   <meta name="theme-color" content="#2f4154">
-  <meta name="description" content="一个OIer的学校生活与OI竞赛记录">
-  <meta name="author" content="code004">
-  <meta name="keywords" content="hexo,coding,c++,Brian Chen,code004">
-  <title>分类 | code004&#39;s Blog</title>
+  <meta name="description" content="Andrew Ender Wiggin&#39;s Blog">
+  <meta name="author" content="Andrew Wiggin">
+  <meta name="keywords" content="andrew,ender,wiggin,game,blog">
+  <title>Categories - Ender&#39;s Blog</title>
 
   <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css">
 
-
-  <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/atom-one-dark.min.css">
 
 
 <!-- 主题依赖的图标库，不要自行修改 -->
@@ -36,44 +31,21 @@
 <link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_pjno9b9zyxs.css">
 
 
-
-
 <link rel="stylesheet" href="/css/main.css">
 
 <!-- 自定义样式保持在最底部 -->
 
 
-  <script data-ad-client="ca-pub-1738762489730827" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="code004's Blog" type="application/atom+xml">
+  <script src="/js/utils.js"></script>
+<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="Ender's Blog" type="application/atom+xml">
 </head>
 
 
 <body>
-  <div id="dark" onclick="switchDarkMode()"></div>
-  <script>
-    var isNight = new Date().getHours() >= 22 || new Date().getHours() < 7; // 指定时间
-    // 依次判断 系统暗黑模式 指定时间 缓存 dark
-    if( matchMedia('(prefers-color-scheme: dark)').matches || isNight || localStorage.getItem('dark') === '1') {
-      if(!(isNight&&localStorage.getItem('noDark') === '1')) {
-        document.body.classList.add('dark');
-      }
-    }
-    document.getElementById('dark').innerHTML = document.querySelector("body").classList.contains("dark")?"🌙":"🌞";
-  </script>
-  <script type="text/javascript">
-    window._idl = {};
-    _idl.variant = "modal";
-    (function() {
-        var idl = document.createElement('script');
-        idl.async = true;
-        idl.src = 'https://members.internetdefenseleague.org/include/?url=' + (_idl.url || '') + '&campaign=' + (_idl.campaign || '') + '&variant=' + (_idl.variant || 'modal');
-        document.getElementsByTagName('body')[0].appendChild(idl);
-    })();
-  </script>
   <header style="height: 60vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
-    <a class="navbar-brand" href="/">&nbsp;<strong>code004's Blog</strong>&nbsp;</a>
+    <a class="navbar-brand" href="/">&nbsp;<strong>Ender's Blog</strong>&nbsp;</a>
 
     <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <div class="animated-icon"><span></span><span></span><span></span></div>
@@ -90,7 +62,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/">
                 <i class="iconfont icon-home-fill"></i>
-                首页
+                Home
               </a>
             </li>
           
@@ -102,7 +74,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/archives/">
                 <i class="iconfont icon-archive-fill"></i>
-                归档
+                Archives
               </a>
             </li>
           
@@ -114,7 +86,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/categories/">
                 <i class="iconfont icon-category-fill"></i>
-                分类
+                Categories
               </a>
             </li>
           
@@ -126,19 +98,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/tags/">
                 <i class="iconfont icon-tags-fill"></i>
-                标签
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/message/">
-                <i class="iconfont icon-comment"></i>
-                留言
+                Tags
               </a>
             </li>
           
@@ -150,31 +110,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/about/">
                 <i class="iconfont icon-user-fill"></i>
-                关于
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/links/">
-                <i class="iconfont icon-link-fill"></i>
-                友链
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/changeline/">
-                <i class="iconfont icon-switch-fill"></i>
-                切换
+                About
               </a>
             </li>
           
@@ -189,7 +125,7 @@
   </div>
 </nav>
 
-    <div class="view intro-2" id="background" parallax="true" style="background: url('/img/default.png') no-repeat center center;
+    <div class="view intro-2" id="background" parallax="true" style="background: url('/img/banner.png') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
@@ -231,429 +167,28 @@
     
     
     <div class="category row">
-      <a class="category-item collapsed list-group-item category-item-action col-10 col-md-11" id="heading-随记" role="tab" data-toggle="collapse" href="#collapse-随记" aria-expanded="false">
-        随记
+      <a class="category-item collapsed list-group-item category-item-action col-10 col-md-11" id="heading-ckc94swth0003bgud3uaygcn9" role="tab" data-toggle="collapse" href="#collapse-ckc94swth0003bgud3uaygcn9" aria-expanded="false">
+        Hello,World
         <i class="iconfont icon-arrowright"></i>
       </a>
-      <a href="/categories/%E9%9A%8F%E8%AE%B0/" class="category-count col-2 col-md-1">
-        <i class="iconfont icon-articles"></i>
-        <span>31</span>
-      </a>
-      <div class="category-collapse">
-        
-          
-  <div id="collapse-随记" class="collapse in" role="tabpanel" aria-labelledby="heading-随记">
-    
-    
-    
-      
-      
-        <a href="/posts/a-word-to-newcomers/" class="list-group-item list-group-item-action">
-          <span class="category-post">对“后浪”的几句话</span>
-        </a>
-      
-    
-      
-      
-        <a href="/posts/about-windows-update/" class="list-group-item list-group-item-action">
-          <span class="category-post">关于Windows Update</span>
-        </a>
-      
-    
-      
-      
-        <a href="/posts/a-strong-condemn-to-insults-and-defamation/" class="list-group-item list-group-item-action">
-          <span class="category-post">对于侵犯我人格尊严权及造谣、诽谤行为的强烈谴责</span>
-        </a>
-      
-    
-      
-      
-        <a href="/posts/about-chuangzhi-a-party-of-jfca/" class="list-group-item list-group-item-action">
-          <span class="category-post">chuangzhi事件—一场盛大的JFCA派对</span>
-        </a>
-      
-    
-      
-      
-        <a href="/posts/reply-to-a-pr/" class="list-group-item list-group-item-action">
-          <span class="category-post">对一个Pull Request的回复</span>
-        </a>
-      
-    
-      
-      
-        <a href="/posts/how-to-reinstall-windows-10/" class="list-group-item list-group-item-action">
-          <span class="category-post">Windows 10 快速安装指南</span>
-        </a>
-      
-    
-      
-      
-        <a href="/posts/anti-january-invest-exam/" class="list-group-item list-group-item-action">
-          <span class="category-post">也谈2020元调英语阅读题</span>
-        </a>
-      
-    
-      
-      
-        <a href="/posts/what-to-do-if-posts-are-copied/" class="list-group-item list-group-item-action">
-          <span class="category-post">什么？你的文章被爬虫爬了？</span>
-        </a>
-      
-    
-      
-      
-        <a href="/posts/about-ccf-lost-source-code-in-jx/" class="list-group-item list-group-item-action">
-          <span class="category-post">关于 CSP-J2/S2 2019 江西赛区考生代码丢失事件</span>
-        </a>
-      
-    
-      
-      
-        <a href="/posts/a-particular-experience/" class="list-group-item list-group-item-action">
-          <span class="category-post">一次特别的经历</span>
-        </a>
-      
-    
-      
-      
-        <a href="/categories/%E9%9A%8F%E8%AE%B0/" class="list-group-item list-group-item-action">
-          <span class="category-post">More...</span>
-        </a>
-        
-  </div>
-
-        
-      </div>
-    </div>
-  
-    
-    
-    <div class="category row">
-      <a class="category-item  list-group-item category-item-action col-10 col-md-11" id="heading-项目" role="tab" data-toggle="collapse" href="#collapse-项目" aria-expanded="true">
-        项目
-        <i class="iconfont icon-arrowright"></i>
-      </a>
-      <a href="/categories/%E9%A1%B9%E7%9B%AE/" class="category-count col-2 col-md-1">
-        <i class="iconfont icon-articles"></i>
-        <span>13</span>
-      </a>
-      <div class="category-collapse">
-        
-          
-  <div id="collapse-项目" class="collapse in show" role="tabpanel" aria-labelledby="heading-项目">
-    
-  
-  
-    
-    
-    <div class="category-sub row">
-      <a class="category-subitem collapsed list-group-item category-item-action col-10 col-md-11" id="heading-GC Server" role="tab" data-toggle="collapse" href="#collapse-GC Server" aria-expanded="false">
-        GC Server
-        <i class="iconfont icon-arrowright"></i>
-      </a>
-      <a href="/categories/%E9%A1%B9%E7%9B%AE/GC-Server/" class="category-count col-2 col-md-1">
-        <i class="iconfont icon-articles"></i>
-        <span>10</span>
-      </a>
-      <div class="category-collapse">
-        
-          
-  <div id="collapse-GC Server" class="collapse in" role="tabpanel" aria-labelledby="heading-GC Server">
-    
-    
-    
-      
-      
-        <a href="/posts/gc-server-version-rules/" class="list-group-item list-group-item-action">
-          <span class="category-post">GC Server 版本发行规则</span>
-        </a>
-      
-    
-      
-      
-        <a href="/posts/gc-server-online-login/" class="list-group-item list-group-item-action">
-          <span class="category-post">GC Server 在线登录功能</span>
-        </a>
-      
-    
-      
-      
-        <a href="/posts/gc-server-development-resumed/" class="list-group-item list-group-item-action">
-          <span class="category-post">GC Server 开发工作继续</span>
-        </a>
-      
-    
-      
-      
-        <a href="/posts/gc-server-development-paused/" class="list-group-item list-group-item-action">
-          <span class="category-post">GC Server 开发工作暂停</span>
-        </a>
-      
-    
-      
-      
-        <a href="/posts/gc-server-ver-9-0/" class="list-group-item list-group-item-action">
-          <span class="category-post">GC Server Ver 9.0</span>
-        </a>
-      
-    
-      
-      
-        <a href="/posts/gc-server-preview-version/" class="list-group-item list-group-item-action">
-          <span class="category-post">GC Server 预览版本</span>
-        </a>
-      
-    
-      
-      
-        <a href="/posts/gc-server-ver-8-8/" class="list-group-item list-group-item-action">
-          <span class="category-post">GC Server Ver 8.8</span>
-        </a>
-      
-    
-      
-      
-        <a href="/posts/gc-server-user-intro/" class="list-group-item list-group-item-action">
-          <span class="category-post">【不再适用】GC Server 用户制度介绍</span>
-        </a>
-      
-    
-      
-      
-        <a href="/posts/gc-server-ver-8-7/" class="list-group-item list-group-item-action">
-          <span class="category-post">GC Server Ver 8.7 &amp; 2019新年专版</span>
-        </a>
-      
-    
-      
-      
-        <a href="/posts/gc-server-ver-8-6/" class="list-group-item list-group-item-action">
-          <span class="category-post">GC Server Ver 8.6</span>
-        </a>
-      
-    
-  </div>
-
-        
-      </div>
-    </div>
-  
-  </div>
-
-        
-      </div>
-    </div>
-  
-    
-    
-    <div class="category row">
-      <a class="category-item collapsed list-group-item category-item-action col-10 col-md-11" id="heading-公告" role="tab" data-toggle="collapse" href="#collapse-公告" aria-expanded="false">
-        公告
-        <i class="iconfont icon-arrowright"></i>
-      </a>
-      <a href="/categories/%E5%85%AC%E5%91%8A/" class="category-count col-2 col-md-1">
-        <i class="iconfont icon-articles"></i>
-        <span>4</span>
-      </a>
-      <div class="category-collapse">
-        
-          
-  <div id="collapse-公告" class="collapse in" role="tabpanel" aria-labelledby="heading-公告">
-    
-    
-    
-      
-      
-        <a href="/posts/about-domain-transfer/" class="list-group-item list-group-item-action">
-          <span class="category-post">本站域名可能将于2个月内转换到code004.cf</span>
-        </a>
-      
-    
-      
-      
-        <a href="/posts/notice-about-2019-ncov/" class="list-group-item list-group-item-action">
-          <span class="category-post">关于新型冠状病毒的公告</span>
-        </a>
-      
-    
-      
-      
-        <a href="/posts/notice/" class="list-group-item list-group-item-action">
-          <span class="category-post">公告板</span>
-        </a>
-      
-    
-      
-      
-        <a href="/posts/notice-about-junior-grade-9/" class="list-group-item list-group-item-action">
-          <span class="category-post">关于进入九年级后此博客处理办法的公告</span>
-        </a>
-      
-    
-  </div>
-
-        
-      </div>
-    </div>
-  
-    
-    
-    <div class="category row">
-      <a class="category-item collapsed list-group-item category-item-action col-10 col-md-11" id="heading-教程" role="tab" data-toggle="collapse" href="#collapse-教程" aria-expanded="false">
-        教程
-        <i class="iconfont icon-arrowright"></i>
-      </a>
-      <a href="/categories/%E6%95%99%E7%A8%8B/" class="category-count col-2 col-md-1">
-        <i class="iconfont icon-articles"></i>
-        <span>3</span>
-      </a>
-      <div class="category-collapse">
-        
-          
-  <div id="collapse-教程" class="collapse in" role="tabpanel" aria-labelledby="heading-教程">
-    
-    
-    
-      
-      
-        <a href="/posts/how-to-crack-wjx/" class="list-group-item list-group-item-action">
-          <span class="category-post">如何在问卷星考试中作弊</span>
-        </a>
-      
-    
-      
-      
-        <a href="/posts/how-to-get-xes-books-for-free/" class="list-group-item list-group-item-action">
-          <span class="category-post">如何免费获得XES的《元调训练手册》</span>
-        </a>
-      
-    
-      
-      
-        <a href="/posts/cpp-read-from-file/" class="list-group-item list-group-item-action">
-          <span class="category-post">C++文件读入与输出简洁教程</span>
-        </a>
-      
-    
-  </div>
-
-        
-      </div>
-    </div>
-  
-    
-    
-    <div class="category row">
-      <a class="category-item collapsed list-group-item category-item-action col-10 col-md-11" id="heading-网络安全" role="tab" data-toggle="collapse" href="#collapse-网络安全" aria-expanded="false">
-        网络安全
-        <i class="iconfont icon-arrowright"></i>
-      </a>
-      <a href="/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" class="category-count col-2 col-md-1">
+      <a href="/categories/Hello-World/" class="category-count col-2 col-md-1">
         <i class="iconfont icon-articles"></i>
         <span>1</span>
       </a>
       <div class="category-collapse">
         
           
-  <div id="collapse-网络安全" class="collapse in" role="tabpanel" aria-labelledby="heading-网络安全">
+  <div id="collapse-ckc94swth0003bgud3uaygcn9" class="collapse in" role="tabpanel" aria-labelledby="heading-ckc94swth0003bgud3uaygcn9">
     
     
     
       
       
-        <a href="/posts/about-virtual-private-network-and-the-onion-router/" class="list-group-item list-group-item-action">
-          <span class="category-post">关于虚拟专用网络和洋葱路由器的安全性</span>
+        <a href="/posts/hello-world/" class="list-group-item list-group-item-action">
+          <span class="category-post">Hello World</span>
         </a>
       
     
-  </div>
-
-        
-      </div>
-    </div>
-  
-    
-    
-    <div class="category row">
-      <a class="category-item collapsed list-group-item category-item-action col-10 col-md-11" id="heading-收藏" role="tab" data-toggle="collapse" href="#collapse-收藏" aria-expanded="false">
-        收藏
-        <i class="iconfont icon-arrowright"></i>
-      </a>
-      <a href="/categories/%E6%94%B6%E8%97%8F/" class="category-count col-2 col-md-1">
-        <i class="iconfont icon-articles"></i>
-        <span>1</span>
-      </a>
-      <div class="category-collapse">
-        
-          
-  <div id="collapse-收藏" class="collapse in" role="tabpanel" aria-labelledby="heading-收藏">
-    
-    
-    
-      
-      
-        <a href="/posts/graph-artifact-cs-academy/" class="list-group-item list-group-item-action">
-          <span class="category-post">图论画图神器——CS Academy</span>
-        </a>
-      
-    
-  </div>
-
-        
-      </div>
-    </div>
-  
-    
-    
-    <div class="category row">
-      <a class="category-item  list-group-item category-item-action col-10 col-md-11" id="heading-游戏" role="tab" data-toggle="collapse" href="#collapse-游戏" aria-expanded="true">
-        游戏
-        <i class="iconfont icon-arrowright"></i>
-      </a>
-      <a href="/categories/%E6%B8%B8%E6%88%8F/" class="category-count col-2 col-md-1">
-        <i class="iconfont icon-articles"></i>
-        <span>1</span>
-      </a>
-      <div class="category-collapse">
-        
-          
-  <div id="collapse-游戏" class="collapse in show" role="tabpanel" aria-labelledby="heading-游戏">
-    
-  
-  
-    
-    
-    <div class="category-sub row">
-      <a class="category-subitem collapsed list-group-item category-item-action col-10 col-md-11" id="heading-Minecraft" role="tab" data-toggle="collapse" href="#collapse-Minecraft" aria-expanded="false">
-        Minecraft
-        <i class="iconfont icon-arrowright"></i>
-      </a>
-      <a href="/categories/%E6%B8%B8%E6%88%8F/Minecraft/" class="category-count col-2 col-md-1">
-        <i class="iconfont icon-articles"></i>
-        <span>1</span>
-      </a>
-      <div class="category-collapse">
-        
-          
-  <div id="collapse-Minecraft" class="collapse in" role="tabpanel" aria-labelledby="heading-Minecraft">
-    
-    
-    
-      
-      
-        <a href="/posts/how-to-get-exp-in-minecraft/" class="list-group-item list-group-item-action">
-          <span class="category-post">如何在Minecraft中快速地获取经验</span>
-        </a>
-      
-    
-  </div>
-
-        
-      </div>
-    </div>
-  
   </div>
 
         
@@ -681,7 +216,7 @@
   <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
         <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -689,7 +224,7 @@
       <div class="modal-body mx-3">
         <div class="md-form mb-5">
           <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+          <label data-error="x" data-success="v" for="local-search-input">keyword</label>
         </div>
         <div class="list-group" id="local-search-result"></div>
       </div>
@@ -701,40 +236,14 @@
   
 
   
-    <div class="col-lg-7 mx-auto nopadding-md">
-      <div class="container custom mx-auto">
-        <div align="center"><a href="https://internetdefenseleague.org" target="_blank" rel="external nofollow noopener noreferrer"><img src="https://internetdefenseleague.org/images/badges/final/footer_badge.png" srcset="/img/loading.gif" alt="Member of The Internet Defense League"></a></div>
-      </div>
-    </div>
-  
 
   <footer class="mt-5">
   <div class="text-center py-3">
     <div>
-      Powered by 
-      <i class="iconfont icon-copyright"></i><a href="https://github.com/code004Accepted" target="_blank" rel="nofollow noopener">
-        <span>code004Accepted</span></a><br>
-      Thanks to <a href="https://hexo.io" target="_blank" rel="external nofollow noopener noreferrer"><span>Hexo</span></a> & <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener">
-        <span>Fluid</span></a>
+      Copyright <i class="iconfont icon-copyright"></i> 2020 <a href="https://github.com/earthender" target="_blank" rel="nofollow noopener"><span>Andrew Wiggin</span></a><br>
+      Commander of <a href="https://enderverse.fandom.com/wiki/International_Fleet" target="_blank" rel="external nofollow noopener noreferrer"><span>the International Fleet</span></a>      
     </div>
     
-  <div>
-    
-      <!-- 不蒜子统计PV -->
-      
-      <span id="busuanzi_container_site_pv" style="display: none">
-      Views <span id="busuanzi_value_site_pv"></span> |
-    </span>
-    
-    
-      <!-- 不蒜子统计UV -->
-      
-      <span id="busuanzi_container_site_uv" style="display: none">
-      Users <span id="busuanzi_value_site_uv"></span>
-    </span>
-    
-  </div>
-
 
     
 
@@ -748,10 +257,12 @@
 <script src="/js/debouncer.js"></script>
 <script src="/js/main.js"></script>
 
+<!-- Plugins -->
 
-  <script src="/js/lazyload.js"></script>
 
-
+  
+    <script src="/js/lazyload.js"></script>
+  
 
 
 
@@ -760,12 +271,9 @@
 
 
 
-  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
 
-
-<!-- Plugins -->
 
 
 
@@ -774,10 +282,10 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "分类列表&nbsp;",
+        "Category&nbsp;",
       ],
       cursorChar: "_",
-      typeSpeed: 100,
+      typeSpeed: 70,
       loop: true,
     });
     typed.stop();
@@ -788,21 +296,6 @@
   </script>
 
 
-
-  <script src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js"></script>
-  <script>
-    anchors.options = {
-      placement: "right",
-      visible: "hover",
-      
-    };
-    var el = "h1,h2,h3,h4,h5,h6".split(",");
-    var res = [];
-    for (item of el) {
-      res.push(".markdown-body > " + item)
-    }
-    anchors.add(res.join(", "))
-  </script>
 
 
 
@@ -835,33 +328,7 @@
 
 
 
-  
 
-  <link rel="stylesheet" href="/css/sweetalert.css">
-  <script type="text/javascript" src="/js/sweetalert.js"></script>
-  <script>
-    window.onload = function(){
-      document.body.oncopy = function() {
-        sweetAlert("复制成功", "欢迎将本博客原文地址分享到其它网站。允许不超过文章30%字数的摘录，但请在醒目位置附上原文链接及作者。未经许可禁止任何形式的全文转载。禁止发布任何基于本文的再创作。复制本站任何内容即代表您已阅读、同意并保证遵守以上规则。", "success");
-      };
-    }
-  </script>
 
-  <script>
-    //点击事件
-    function switchDarkMode() {
-      if ($('body').hasClass('dark')) {
-        $("#dark").html("🌞");
-        document.body.classList.remove('dark');
-        localStorage.setItem('noDark', '1');
-        localStorage.setItem('dark', '0');
-      } else {
-        $("#dark").html("🌙"); 
-        document.body.classList.add('dark');
-        localStorage.setItem('dark', '1');
-        localStorage.setItem('noDark', '0');
-      }
-    }
-  </script>
 </body>
 </html>
